@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:wicket="http://wicket.apache.org"  
+      xml:lang="en"  
+      lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Wicket Application</title>
+</head>
+<body>
+	<wicket:extend>
+		<h2>Add a new person</h2>
+		<form wicket:id="personForm">
+			<table>
+				<tr>
+					<th>First Name</th>
+					<td><input type="text" wicket:id="firstName" /></td>
+				</tr>
+				<tr>
+					<th>Last Name</th>
+					<td><input type="text" wicket:id="lastName" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Add Person" wicket:id="submit"/></td>
+				</tr>
+			</table>
+		</form>
+	</wicket:extend>
+</body>
+</html>
